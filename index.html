@@ -69,13 +69,13 @@
     <br>
     <br>
     <label for="minDelay">Minimum Delay (ms): </label>
-    <input type="number" id="minDelay" value="9000">
+    <input type="number" id="minDelay" value="10000">
   
     <label for="maxDelay">Maximum Delay (ms): </label>
-    <input type="number" id="maxDelay" value="11000">
+    <input type="number" id="maxDelay" value="12000">
   
     <label for="searchLimit">Search Limit: </label>
-    <input type="number" id="searchLimit" value="250">
+    <input type="number" id="searchLimit" value="300">
     <br>
     <br>
     <br>
@@ -173,8 +173,9 @@ const m = y(b)
     var r = 0;
     let t;
     const o = ()=>{
-        const a = parseInt(i.value, 10)
-          , n = parseInt(u.value, 10);
+        
+        const a = parseInt(i.value, 11)
+          , n = parseInt(u.value, 12);
         return Math.floor(Math.random() * (n - a + 1)) + a
     }
       , d = ()=>{
